@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Chemical Inventory</title>
+        </head>
+        <body>
+          <h1>Chemical Inventory</h1>
+          <table id="chemical-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Chemical Name</th>
+                <th>Vendor</th>
+                <th>Density</th>
+                <th>Viscosity</th>
+                <th>Packaging</th>
+                <th>Pack Size</th>
+                <th>Unit</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <button id="show-table">Add New Chemical</button>
+          <form id="add-chemical-form">
+            <h2>Add Chemical</h2>
+            <label for="chemicalName">Chemical Name:</label>
+            <input type="text" id="chemicalName" name="chemicalName" required />
+            <br />
+            <label for="vendor">Vendor:</label>
+            <input type="text" id="vendor" name="vendor" required />
+            <br />
+            <label for="density">Density:</label>
+            <input
+              type="number"
+              id="density"
+              name="density"
+              step="0.001"
+              required
+            />
+            <br />
+            <label for="viscosity">Viscosity:</label>
+            <input
+              type="number"
+              id="viscosity"
+              name="viscosity"
+              step="0.001"
+              required
+            />
+            <br />
+            <label for="packaging">Packaging:</label>
+            <input type="text" id="packaging" name="packaging" required />
+            <br />
+            <label for="packSize">Pack Size:</label>
+            <input type="number" id="packSize" name="packSize" required />
+            <br />
+            <label for="unit">Unit:</label>
+            <input type="text" id="unit" name="unit" required />
+            <br />
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required />
+            <br />
+            <button type="submit">Add</button>
+          </form>
+        </body>
+      </html>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
